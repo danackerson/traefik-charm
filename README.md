@@ -1,5 +1,5 @@
 # Overview
-This juju charm installs Traefik v2.0.0.
+This juju charm installs [Traefik v2.0.0](https://traefik.io/).
 
 To build simply run the Makefile target
 ```bash
@@ -15,11 +15,13 @@ juju deploy ./dans-example
 If you don't have a local lxd controller: `juju bootstrap localhost lxd-local` will get you setup :)
 
 # Code
-Main file is found at reactive/dans_example.py
-There's also a stock traefik.toml template file at templates/traefik.toml.tmpl
+Main file is found at [dans_example.py](reactive/dans_example.py)
+
+There's also a stock [traefik.toml template file](templates/traefik.toml.tmpl)
 
 # Traefik Dashboard
 Will be accessible at e.g. http://10.191.169.46:8080/dashboard/#/
+
 Just replace the IP address with that of public IP of the Juju unit!
 
 Testing is done via tox and there are two environments setup, one for unit and
