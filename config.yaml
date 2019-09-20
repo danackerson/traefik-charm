@@ -1,0 +1,9 @@
+options:
+  port:
+    type: string
+    default: "80"
+    description: "Port server runs on"
+  traefik_api_debug:
+    type: string
+    default: "false"
+    description: "Control debug status of Traefik API server"

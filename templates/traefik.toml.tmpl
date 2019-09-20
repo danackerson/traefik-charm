@@ -1,0 +1,18 @@
+[providers]
+  [providers.file]
+    directory = "/opt/traefik_providers"
+    watch = true
+    filename = "foobar"
+
+[api]
+  insecure = true
+  dashboard = true
+  debug = {{ traefik_api_debug }}
+
+[log]
+  level = "DEBUG"
+  filePath = "/var/log/traefik_server.log"
+
+[accessLog]
+  filePath = "/var/log/traefik_access.log"
+

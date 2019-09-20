@@ -1,0 +1,6 @@
+#!/usr/local/sbin/charm-env python3
+
+from lib_dans_example import DansexampleHelper
+
+helper = DansexampleHelper()
+helper.action_function()
